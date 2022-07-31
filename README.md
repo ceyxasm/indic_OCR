@@ -7,5 +7,5 @@ automatic evaluation of handwritten answer sheets
 - [x] Easy OCR implementation
     - [ ] easyOCR hindi
 - [x] Tesseract
-    -[ ] Tesseract hindi
+    - [ ] Tesseract hindi
 - [ ] CRNN+ CTC model
