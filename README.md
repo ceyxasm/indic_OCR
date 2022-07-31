@@ -4,5 +4,8 @@ automatic evaluation of handwritten answer sheets
 ##Todos:
 - [ ] Segmentation- rectangle
 - [ ] Segmentation- without rectangle
-- [ ] Easy OCR implementation
-- [ ] Tesseract
+- [x] Easy OCR implementation
+    - [ ] easyOCR hindi
+- [x] Tesseract
+    -[ ] Tesseract hindi
+- [ ] CRNN+ CTC model
