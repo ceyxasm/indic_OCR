@@ -2,7 +2,7 @@
 automatic evaluation of handwritten answer sheets
 
 ##Todos:
-- [ ] Segmentation- rectangle
+- [ ] Segmentation- rectangle/ try closed contour in openCV with area threshold
 - [ ] Segmentation- without rectangle
 - [x] Easy OCR implementation
     - [x]  easyOCR hindi

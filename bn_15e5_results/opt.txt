@@ -1,0 +1,40 @@
+------------ Options -------------
+exp_name: ./models_bn2
+train_data: ../ICFHR_lmdb_dataset/bn/train_bengali/
+valid_data: ../ICFHR_lmdb_dataset/bn/val_bengali/
+manualSeed: 1111
+workers: 4
+batch_size: 192
+num_iter: 1500000
+valInterval: 2000
+saved_model: 
+FT: False
+adam: False
+lr: 1
+beta1: 0.9
+rho: 0.95
+eps: 1e-08
+grad_clip: 5
+baiduCTC: False
+select_data: ['/']
+batch_ratio: ['1']
+total_data_usage_ratio: 1.0
+batch_max_length: 25
+imgH: 32
+imgW: 100
+rgb: False
+character: -।ঁংঃঅআইঈউঊঋএঐওঔকখগঘঙচছজঝঞটঠডঢণতথদধনপফবভমযরলশষসহ়ঽািীুূৃৄেৈোৌ্ৎৗড়ঢ়য়ৠৢৣ০১২৩৪৫৬৭৮৯ৰৱ৲৳৴৵৶৷৹৺৻
+sensitive: False
+PAD: False
+data_filtering_off: False
+Transformation: None
+FeatureExtraction: RCNN
+SequenceModeling: BiLSTM
+Prediction: CTC
+num_fiducial: 20
+input_channel: 1
+output_channel: 512
+hidden_size: 256
+num_gpu: 1
+num_class: 92
+---------------------------------------
