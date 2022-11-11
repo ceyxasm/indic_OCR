@@ -1,8 +1,8 @@
 
 
 ## Updates
-**Nov 11, 2022**: starting 10-nov-2022 all updates will be reflected [here](https://ceyxasm.github.io/auto_grader/)
-**Nov 8, 2022**: init 
+* **Nov 11, 2022**: starting 10-nov-2022 all updates will be reflected [here](https://ceyxasm.github.io/auto_grader/)
+* **Nov 8, 2022**: init 
 
 ## Getting Started
 ### Dependency
