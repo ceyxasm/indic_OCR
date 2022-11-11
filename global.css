@@ -1,0 +1,60 @@
+
+table, th, td {
+    border: 1px solid black;
+}
+
+
+
+
+.card{
+    border: 1px solid black;
+    padding-left: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 10px;
+    background-color: rgb(172, 245, 221);
+    image-resolution: 100px;
+
+}
+
+.update{
+    border: 1px solid black;
+    padding: 24px;
+    margin: 10px;
+}
+
+.name{
+    text-align: right;
+    padding-right: 80px;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style: none;
+    overflow: hidden;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    background-color: rgb(38, 38, 55);
+    color: bisque;
+}
+
+.nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+.navs2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-inline-start: 40px;
+
+}

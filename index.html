@@ -1,1 +1,242 @@
-<h1> Hello Autograders </h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>auto_grader</title>
+    <link rel="stylesheet" href="global.css">
+</head>
+
+<header style="position:fixed;">
+  <div class="nav navs navs2">
+    <a href="#upcoming"> Upcoming</a>
+    <a href="#updates">Updates</a>
+    <a href="https://github.com/ceyxasm/auto_grader">Github</a>
+    <p class="name"> <strong>Automatic Grading of Handwritten Answer Sheets</strong> </p>
+</div>
+<br><br><br>
+</header>
+
+<body>
+
+ <br><br><br><br>
+  
+  <!--Upcoming work-->
+  <div id="upcoming"><br><br><br></div>
+  <div class="card upcoming" >
+  <h2>Upcoming work</h2>
+  <ul>
+    <li>Implementing a better algorithm for finding the bounding box of the answer sheet</li>
+    <li>Extracting words(images) out of a sentence</li>
+    <li>Applying data augmentation before training</li>
+    <li>Designing a distance function given 2 words and whether they both are to be considered equivalent; given the threshold</li>
+    <li>Exploring transformers</li>
+  </ul>
+</div>
+  
+  
+  <!--List of updates-->
+
+  <div id="updates"><br><br><br></div>
+  <div class="card updates" >
+  <h2> Updates </h2>
+  <ul>
+  <div class="update">
+    <li>  <strong>08-Nov-2022: <br>Devnagri Training finished</strong> <sup style="color:red">*new</sup> </li>
+    <ol>
+      <p>model details: Transformation None RCNN BiLSTM CTC <br>
+        character set= 'ऀँंःऄअआइईउऊऋऌऍऎएऐऑऒओऔकखगघङचछजझञटठडढणतथदधनऩपफबभमयरऱलळऴवशषसहऺऻ़ऽािीुूृॄॅॆेैॉॊोौ्ॏॐ॒॑॓॔ॕॖॗग़ज़ड़ढ़फ़य़ॠॡॢॣ।॥०१२३४५६७८९॰ॱॲॳॴॵॶॷॸॹॺॻॼॽॾॿ'</p>
+      <table>
+        <tr>
+          <th>  Iter count</th>
+          <th>  Current Validation Accuracy</th>
+          <th>  Best Validation Accuracy</th>
+          <th>  Train Loss</th>
+          <th>  Val Loss</th>
+        </tr>
+        <tr>
+          <td>  22000  </td>
+          <td>  60.261  </td>
+          <td>  60.261  </td>
+          <td>  0.00202  </td>
+          <td>  0.90251 </td>
+        </tr>
+        <tr>
+          <td>  2.4e5  </td>
+          <td>  61.308  </td>
+          <td>  61.308  </td>
+          <td>  0.00001  </td>
+          <td>  1.12084  </td>
+        </tr>
+        <tr>
+          <td>  3e5  </td>
+          <td>  61.103  </td>
+          <td>  61.308  </td>
+          <td>  0  </td>
+          <td>  1.18215  </td>
+        </tr>
+        <tr>
+          <td>  5e5  </td>
+          <td>  61.300  </td>
+          <td>  61.481  </td>
+          <td>  0  </td>
+          <td>  1.2352  </td>
+        </tr>
+        <tr>
+          <td>  7.5e5  </td>
+          <td>  60.977  </td>
+          <td>  61.528  </td>
+          <td>  0  </td>
+          <td>  1.26202 </td>
+        </tr>
+        <tr>
+          <td>  10e5  </td>
+          <td>  61.056  </td>
+          <td>  61.528  </td>
+          <td>  0  </td>
+          <td>  1.29381  </td>
+        </tr>
+
+      </table>  
+      <br>
+      <strong>Inference: </strong> <p>Model peaks at 7.4e5 iters with 61.528% acc. <br> 
+        However a practically same accuracy of 61.308% is reached in 2.4e5 iters <br>
+        Even a sub-optimal accuracy of 60.281% can be reached with mere 22k iters.
+        55% was reached in 10k iters</p>
+
+        <p>Following are some results from the best_accuracy model</p>
+        <table class="table_img">
+          <tr>
+            <th> Image name</th>
+            <th>  Ground Truth</th>
+            <th>  Prediction</th>
+          </tr>
+          <tr>
+            <td>  test/14.jpg  </td>
+            <td>  <img style="height:80px" src="./archive/nov_8/14.jpg" />  </td>
+            <td>  कंपनी  </td>
+          </tr>
+          <tr>
+            <td>  test/29.jpg  </td>
+            <td>  <img style="height:80px" src="./archive/nov_8/29.jpg" />  </td>
+            <td>  सपर्याप्त  </td>
+          </tr>
+          <tr>
+            <td>  test/100.jpg  </td>
+            <td>  <img style="height:80px" src="./archive/nov_8/100.jpg" />  </td>
+            <td>  आँगलाइख  </td>
+          </tr>
+          <tr>
+            <td>  test/350.jpg  </td>
+            <td>  <img style="height:80px" src="./archive/nov_8/350.jpg" />  </td>
+            <td>  ९  </td>
+          </tr>
+          <tr>
+            <td>  test/549.jpg  </td>
+            <td>  <img style="height:80px" src="./archive/nov_8/549.jpg" />  </td>
+            <td>  शशणशणर्य  </td>
+          </tr>
+          <tr>
+            <td>  test/610.jpg  </td>
+            <td>  <img style="height:80px" src="./archive/nov_8/610.jpg" />  </td>
+            <td>  अभियान  </td>
+          </tr>
+          <tr>
+            <td>  test/1112.jpg  </td>
+            <td>  <img style="height:80px" src="./archive/nov_8/1112.jpg" />  </td>
+            <td>  फ़यदा  </td>
+          </tr>
+          <tr>
+            <td>  test/1455.jpg  </td>
+            <td>  <img style="height:80px" src="./archive/nov_8/1455.jpg" />  </td>
+            <td>  पेट्रोलिरम  </td>
+          </tr>
+  
+          
+        </table>
+        <strong>Analysis: </strong>
+        <p>For lots of instances we are having exact matches. In places where there are few characters mismatched;<br> 
+          they too can be evaluated to true, as given the context by सपर्याप्त, the examinee can only mean अपर्याप्त. <br>
+          A function to calculate the distance between such words and deciding the threshold is the need </p>
+      </ol>
+    <br><br>
+  </div>
+  
+  <div class="update">
+    <li> <strong>28-Oct-2022:</strong></li> 
+    <ol>
+    <li>Training of devnagri failing [RESOLVED](issue: GPU had run out of memory)</li>
+    <li>Training of bengali completed. Model trained for 1.5e6 epochs. The results on validation data is summarized below</li>
+    <p>model details: Transformation None RCNN BiLSTM CTC <br>
+       character set= '-।ঁংঃঅআইঈউঊঋএঐওঔকখগঘঙচছজঝঞটঠডঢণতথদধনপফবভমযরলশষসহ়ঽািীুূৃৄেৈোৌ্ৎৗড়ঢ়য়ৠৢৣ০১২৩৪৫৬৭৮৯ৰৱ৲৳৴৵৶৷৹৺৻'</p>
+    <table>
+        <tr>
+          <th>  Iter count</th>
+          <th>  Current Validation Accuracy</th>
+          <th>  Best Validation Accuracy</th>
+          <th>  Train Loss</th>
+          <th>  Val Loss</th>
+        </tr>
+        <tr>
+          <td>  14000  </td>
+          <td>  60.525  </td>
+          <td>  60.525  </td>
+          <td>  0.01673  </td>
+          <td>  0.7135  </td>
+        </tr>
+        <tr>
+          <td>  38000  </td>
+          <td>  66.203  </td>
+          <td>  66.203  </td>
+          <td>  0.00015  </td>
+          <td>  0.85342  </td>
+        </tr>
+        <tr>
+          <td>  3e5  </td>
+          <td>  66.566  </td>
+          <td>  66.598  </td>
+          <td>  0  </td>
+          <td>  0.99272  </td>
+        </tr>
+        <tr>
+          <td>  5.7e5  </td>
+          <td>  66.808  </td>
+          <td>  66.808  </td>
+          <td>  0  </td>
+          <td>  1.02564  </td>
+        </tr>
+        <tr>
+          <td>  6e5  </td>
+          <td>  66.586  </td>
+          <td>  66.808  </td>
+          <td>  0  </td>
+          <td>  1.03218  </td>
+        </tr>
+        <tr>
+          <td>  9e5  </td>
+          <td>  66.559  </td>
+          <td>  66.808  </td>
+          <td>  0  </td>
+          <td>  1.05261  </td>
+        </tr>
+        <tr>
+          <td>  15e5  </td>
+          <td>  66.628  </td>
+          <td>  66.808  </td>
+          <td>  0  </td>
+          <td>  1.08701  </td>
+        </tr>
+
+        <p1>62% was reached in 22k iters and 64% was reached in 28k iters</p1>
+
+      </table>
+      <br>
+      <strong>Inference: </strong> <p>Model peaks at 5.7e5 iters with 66.808% acc. <br> 
+      But even a sub-optimal accuracy of 64% can be reached with mere 28k iters.</p>
+      </ol>
+  </div>
+  
+  <div class="update"><li> <strong>01-Oct-2022:</strong> Init </li></div>
+  </ul>
+  </div>
+
+</body>
+</html>
