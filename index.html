@@ -28,6 +28,8 @@
     <li>Understanding source code</li>
     <li>Extracting words(images) out of a sentence</li>
     <li>Applying data augmentation before training</li>
+    <li>Check and compare results for train with urdu special chars</li>
+    <li>Applying TPS transformation or not [READ]</li>
     <li>Designing a distance function given 2 words and whether they both are to be considered equivalent; given the threshold</li>
     <li>Exploring transformers</li>
   </ul>
@@ -40,8 +42,92 @@
   <div class="card updates" >
   <h2> Updates </h2>
   <ul>
+
+    <div class="update">
+      <li>  <strong>22-Dec-2022: <br>Urdu Training init</strong> <sup style="color:red">*new</sup> </li>
+      <ol>
+        <p>model details: Transformation None RCNN BiLSTM CTC <br>
+          character set= 'آأابپتٹثجچحخدڈذرڑزژسشصضطظعفقکگلمنںوؤہۂۃھءیئےۓ'</p>
+        <table>
+          <tr>
+            <th>  Iter count</th>
+            <th>  Current Validation Accuracy</th>
+            <th>  Best Validation Accuracy</th>
+            <th>  Train Loss</th>
+            <th>  Val Loss</th>
+          </tr>
+          <tr>
+            <td>  22000  </td>
+            <td>  60.261  </td>
+            <td>  60.261  </td>
+            <td>  0.00202  </td>
+            <td>  0.90251 </td>
+          </tr>
+
+        </table>  
+        <br>
+        <strong>Inference: </strong> <p>Model training undergoing. <br> 
+          </p>
+  <!--
+          <p>Following are some results from the best_accuracy model</p>
+          <table class="table_img">
+            <tr>
+              <th> Image name</th>
+              <th>  Ground Truth</th>
+              <th>  Prediction</th>
+            </tr>
+            <tr>
+              <td>  test/14.jpg  </td>
+              <td>  <img style="height:80px" src="./archive/nov_8/14.jpg" />  </td>
+              <td>  कंपनी  </td>
+            </tr>
+            <tr>
+              <td>  test/29.jpg  </td>
+              <td>  <img style="height:80px" src="./archive/nov_8/29.jpg" />  </td>
+              <td>  सपर्याप्त  </td>
+            </tr>
+            <tr>
+              <td>  test/100.jpg  </td>
+              <td>  <img style="height:80px" src="./archive/nov_8/100.jpg" />  </td>
+              <td>  आँगलाइख  </td>
+            </tr>
+            <tr>
+              <td>  test/350.jpg  </td>
+              <td>  <img style="height:80px" src="./archive/nov_8/350.jpg" />  </td>
+              <td>  ९  </td>
+            </tr>
+            <tr>
+              <td>  test/549.jpg  </td>
+              <td>  <img style="height:80px" src="./archive/nov_8/549.jpg" />  </td>
+              <td>  शशणशणर्य  </td>
+            </tr>
+            <tr>
+              <td>  test/610.jpg  </td>
+              <td>  <img style="height:80px" src="./archive/nov_8/610.jpg" />  </td>
+              <td>  अभियान  </td>
+            </tr>
+            <tr>
+              <td>  test/1112.jpg  </td>
+              <td>  <img style="height:80px" src="./archive/nov_8/1112.jpg" />  </td>
+              <td>  फ़यदा  </td>
+            </tr>
+            <tr>
+              <td>  test/1455.jpg  </td>
+              <td>  <img style="height:80px" src="./archive/nov_8/1455.jpg" />  </td>
+              <td>  पेट्रोलिरम  </td>
+            </tr>
+    
+            
+          </table>
+          -->
+          <strong>Analysis: </strong>
+          <p>??? </p>
+        </ol>
+      <br><br>
+    </div>
+
   <div class="update">
-    <li>  <strong>08-Nov-2022: <br>Devnagri Training finished</strong> <sup style="color:red">*new</sup> </li>
+    <li>  <strong>08-Nov-2022: <br>Devnagri Training finished</strong>  </li>
     <ol>
       <p>model details: Transformation None RCNN BiLSTM CTC <br>
         character set= 'ऀँंः ऄअआइईउऊऋऌऍऎएऐऑऒओऔक खगघङचछजझञटठडढणतथदधनऩ पफबभमयरऱलळऴवशषसहऺऻ़ ऽािीुूृॄॅॆेैॉॊोौ्ॏ ॐ॒॑॓॔ॕॖॗग़ज़ड़ढ़फ़य़ॠॡॢॣ।॥०१२३४५६७८९॰ॱॲॳॴॵॶॷॸॹॺॻॼॽॾॿ'</p>
