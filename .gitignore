@@ -8,4 +8,7 @@ iter_300000.pth/
 bn_15e5_results.zip
 dev_10e5_results.zip
 how-to-create-an-env
-
+augmentation_lab/output_straug
+augmentation_lab/output_augmentor
+augmentation_lab/straug_fin
+augmentation_lab/input
