@@ -1,3 +1,16 @@
 1. augmentor
 	- only workable function is `random_distortion()
-	- tweaking mag, horiontal & vertical grids still need to be done
+	- torch_transform(), rotate(without crop, max degree=5)
+	- https://augmentor.readthedocs.io/en/stable/code.html#module-Augmentor.Pipeline
+	- at curremt ratio 14x4, mag: 8-13
+
+2. augraphy
+	- is very good but way to many variables; verbose much much but can be good in the long run
+	- nope too hard to work with, usse acha augmentor me invest kr sakta
+	- or maybe dekh lena( after final iter; looking at dataset)
+
+3. straug
+	- autocontrast, color, contrast, brightness, curve, defocus, distort, equilize, fog, frost, 
+	gaussian blur, gausian noise, invert, jpeg compression ,motion blur, perspective, posterize, rain,
+	shaddow, sharpness, specknoise, strect, zoom blur
+	-- fill black in curve, perspective, stretch and disort
