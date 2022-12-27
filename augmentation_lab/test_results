@@ -1,0 +1,3 @@
+1. augmentor
+	- only workable function is `random_distortion()
+	- tweaking mag, horiontal & vertical grids still need to be done
