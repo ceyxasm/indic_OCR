@@ -47,6 +47,7 @@
       <li>  <strong>22-Dec-2022: <br>Urdu Training init</strong> <sup style="color:red">*new</sup> </li>
       <ol>
         <p>model details: Transformation None RCNN BiLSTM CTC <br>
+          augmentation: None <br>
           character set= 'آأابپتٹثجچحخدڈذرڑزژسشصضطظعفقکگلمنںوؤہۂۃھءیئےۓ'</p>
         <table>
           <tr>
@@ -57,71 +58,32 @@
             <th>  Val Loss</th>
           </tr>
           <tr>
-            <td>  22000  </td>
-            <td>  60.261  </td>
-            <td>  60.261  </td>
-            <td>  0.00202  </td>
-            <td>  0.90251 </td>
+            <td>  1e5  </td>
+            <td>  74.808  </td>
+            <td>  75.471  </td>
+            <td>  0.00056  </td>
+            <td>  0.709 </td>
+          </tr>
+          <tr>
+            <td>  2e5  </td>
+            <td>  75.839  </td>
+            <td>  76.412  </td>
+            <td>  0.0005  </td>
+            <td>  0.722 </td>
+          </tr>
+          <tr>
+            <td>  3e5  </td>
+            <td>  74.505  </td>
+            <td>  76.797  </td>
+            <td>  0.0008  </td>
+            <td>  0.764 </td>
           </tr>
 
         </table>  
         <br>
-        <strong>Inference: </strong> <p>Model training undergoing. <br> 
+        <strong>Inference: </strong> <p>Model touches 76% accuracy at 1.08e5 iters. <br>
+           Model touches 70% accuracy at 24k iters. <br>
           </p>
-  <!--
-          <p>Following are some results from the best_accuracy model</p>
-          <table class="table_img">
-            <tr>
-              <th> Image name</th>
-              <th>  Ground Truth</th>
-              <th>  Prediction</th>
-            </tr>
-            <tr>
-              <td>  test/14.jpg  </td>
-              <td>  <img style="height:80px" src="./archive/nov_8/14.jpg" />  </td>
-              <td>  कंपनी  </td>
-            </tr>
-            <tr>
-              <td>  test/29.jpg  </td>
-              <td>  <img style="height:80px" src="./archive/nov_8/29.jpg" />  </td>
-              <td>  सपर्याप्त  </td>
-            </tr>
-            <tr>
-              <td>  test/100.jpg  </td>
-              <td>  <img style="height:80px" src="./archive/nov_8/100.jpg" />  </td>
-              <td>  आँगलाइख  </td>
-            </tr>
-            <tr>
-              <td>  test/350.jpg  </td>
-              <td>  <img style="height:80px" src="./archive/nov_8/350.jpg" />  </td>
-              <td>  ९  </td>
-            </tr>
-            <tr>
-              <td>  test/549.jpg  </td>
-              <td>  <img style="height:80px" src="./archive/nov_8/549.jpg" />  </td>
-              <td>  शशणशणर्य  </td>
-            </tr>
-            <tr>
-              <td>  test/610.jpg  </td>
-              <td>  <img style="height:80px" src="./archive/nov_8/610.jpg" />  </td>
-              <td>  अभियान  </td>
-            </tr>
-            <tr>
-              <td>  test/1112.jpg  </td>
-              <td>  <img style="height:80px" src="./archive/nov_8/1112.jpg" />  </td>
-              <td>  फ़यदा  </td>
-            </tr>
-            <tr>
-              <td>  test/1455.jpg  </td>
-              <td>  <img style="height:80px" src="./archive/nov_8/1455.jpg" />  </td>
-              <td>  पेट्रोलिरम  </td>
-            </tr>
-    
-            
-          </table>
-          -->
-          <strong>Analysis: </strong>
-          <p>??? </p>
         </ol>
       <br><br>
     </div>
@@ -130,6 +92,7 @@
     <li>  <strong>08-Nov-2022: <br>Devnagri Training finished</strong>  </li>
     <ol>
       <p>model details: Transformation None RCNN BiLSTM CTC <br>
+        augmentation: None <br>
         character set= 'ऀँंः ऄअआइईउऊऋऌऍऎएऐऑऒओऔक खगघङचछजझञटठडढणतथदधनऩ पफबभमयरऱलळऴवशषसहऺऻ़ ऽािीुूृॄॅॆेैॉॊोौ्ॏ ॐ॒॑॓॔ॕॖॗग़ज़ड़ढ़फ़य़ॠॡॢॣ।॥०१२३४५६७८९॰ॱॲॳॴॵॶॷॸॹॺॻॼॽॾॿ'</p>
       <table>
         <tr>
@@ -253,6 +216,7 @@
     <li>Training of devnagri failing [RESOLVED](issue: GPU had run out of memory)</li>
     <li>Training of bengali completed. Model trained for 1.5e6 epochs. The results on validation data is summarized below</li>
     <p>model details: Transformation None RCNN BiLSTM CTC <br>
+      augmentations: None <br>
        character set= '-।ঁংঃ অআইঈউঊঋএঐওঔকখগ ঘঙচছজঝঞটঠডঢণত থদধনপফবভমযরলশষস হ়ঽািীুূৃৄেৈোৌ্ ৎৗড়ঢ়য়ৠৢৣ০১২৩৪৫৬৭৮৯ৰৱ৲৳৴৵৶৷৹৺৻'</p>
     <table>
         <tr>
