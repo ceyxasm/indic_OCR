@@ -46,6 +46,74 @@
 
 
     <div class="update">
+      <li>  <strong>14-Jan-2023: <br>Devnagri training 2.0</strong> <sup style="color:red">*new</sup> </li>
+      <ol>
+        <p>model details: Transformation None Resnet BiLSTM Attn  <br>
+          augmentation: None <br>
+          character set= 'ऀँंः ऄअआइईउऊऋऌऍऎएऐऑऒओऔक खगघङचछजझञटठडढणतथदधनऩ पफबभमयरऱलळऴवशषसहऺऻ़ ऽािीुूृॄॅॆेैॉॊोौ्ॏ ॐ॒॑॓॔ॕॖॗग़ज़ड़ढ़फ़य़ॠॡॢॣ।॥०१२३४५६७८९॰ॱॲॳॴॵॶॷॸॹॺॻॼॽॾॿ'</p>
+        <table>
+          <tr>
+            <th>  Iter count</th>
+            <th>  Current Validation Accuracy</th>
+            <th>  Best Validation Accuracy</th>
+            <th>  Train Loss</th>
+            <th>  Val Loss</th>
+          </tr>
+          <tr>
+            <td>  10k  </td>
+            <td>  61.34  </td>
+            <td>  64.22  </td>
+            <td>  0.016  </td>
+            <td>  0.1.10 </td>
+          </tr>
+          <tr>
+            <td>  16k  </td>
+            <td>  68.49  </td>
+            <td>  68.91  </td>
+            <td>  0.006  </td>
+            <td>  0.92 </td>
+          </tr>
+          <tr>
+            <td>  22k  </td>
+            <td>  69.87  </td>
+            <td>  69.87  </td>
+            <td>  0.002  </td>
+            <td>  0.964 </td>
+          </tr>
+          <tr>
+            <td>  1e5  </td>
+            <td>  68.37 </td>
+            <td>  69.87  </td>
+            <td>  0.00008  </td>
+            <td>  1.08</td>
+          </tr>
+          <tr>
+            <td>  2e5  </td>
+            <td>  68.28  </td>
+            <td>  69.87  </td>
+            <td>  0.00001  </td>
+            <td>  1.25 </td>
+          </tr>
+          <tr>
+            <td>  3e5  </td>
+            <td>  68.32  </td>
+            <td>  69.87  </td>
+            <td>  0.00001  </td>
+            <td>  1.31 </td>
+          </tr>
+
+        </table>  
+        <br>
+        <strong>Inference: </strong> <p>Model peaks at 69.87% validation accuracy @22k iters.
+        <br> Model took 1.52 more time (22 hours) to train 3e5 epochs as compared to RCNN-CTC 
+        <br> But RCNN-CTC gave peak of 61.48 after 17 hours training
+        <br> Resnet-Attn reached 69% after 1.5 hours of training
+      </p>
+        </ol>
+      <br><br>
+    </div>
+
+    <div class="update">
       <li>  <strong>28-Dec-2022: <br> Updates</strong> <sup style="color:red">*new</sup> </li>
       <ul> Literature review on Augmentation.</ul>
       <ul> Read about ResNeT+Attn.</ul>
@@ -57,7 +125,7 @@
     <div class="update">
       <li>  <strong>22-Dec-2022: <br>Urdu Training init</strong> <sup style="color:red">*new</sup> </li>
       <ol>
-        <p>model details: Transformation None RCNN BiLSTM CTC <br>
+        <p>model details: Transformation None RCNN BiLSTM CTC  <br>
           augmentation: None <br>
           character set= 'آأابپتٹثجچحخدڈذرڑزژسشصضطظعفقکگلمنںوؤہۂۃھءیئےۓ'</p>
         <table>
@@ -102,7 +170,7 @@
   <div class="update">
     <li>  <strong>08-Nov-2022: <br>Devnagri Training finished</strong>  </li>
     <ol>
-      <p>model details: Transformation None RCNN BiLSTM CTC <br>
+      <p>model details: Transformation None RCNN BiLSTM CTC  <br>
         augmentation: None <br>
         character set= 'ऀँंः ऄअआइईउऊऋऌऍऎएऐऑऒओऔक खगघङचछजझञटठडढणतथदधनऩ पफबभमयरऱलळऴवशषसहऺऻ़ ऽािीुूृॄॅॆेैॉॊोौ्ॏ ॐ॒॑॓॔ॕॖॗग़ज़ड़ढ़फ़य़ॠॡॢॣ।॥०१२३४५६७८९॰ॱॲॳॴॵॶॷॸॹॺॻॼॽॾॿ'</p>
       <table>
@@ -226,7 +294,7 @@
     <ol>
     <li>Training of devnagri failing [RESOLVED](issue: GPU had run out of memory)</li>
     <li>Training of bengali completed. Model trained for 1.5e6 epochs. The results on validation data is summarized below</li>
-    <p>model details: Transformation None RCNN BiLSTM CTC <br>
+    <p>model details: Transformation None RCNN BiLSTM CTC  <br>
       augmentations: None <br>
        character set= '-।ঁংঃ অআইঈউঊঋএঐওঔকখগ ঘঙচছজঝঞটঠডঢণত থদধনপফবভমযরলশষস হ়ঽািীুূৃৄেৈোৌ্ ৎৗড়ঢ়য়ৠৢৣ০১২৩৪৫৬৭৮৯ৰৱ৲৳৴৵৶৷৹৺৻'</p>
     <table>
